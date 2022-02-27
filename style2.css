@@ -1,0 +1,115 @@
+﻿#collage hr{
+    border:none;
+    border-top:2px solid #f5f2f2;
+    height:1px;
+}
+
+#collage #playPanel {
+    background-color: rgb(49, 83, 75);
+    padding:10px 0px;
+    margin: 10px auto;
+    max-width:800px;
+    width:95%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+    margin-top: 40px;
+}
+
+#collage #sortable {
+    border:5px solid rgb(199, 36, 36);
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    width: 400px;
+}
+
+#collage #sortable li {
+    background-size: 400% 400%;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#collage button  {
+    background-color:#f5f2f2;
+    border:1px solid #cce;
+    display: inline;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    padding: 3px 8px;
+}
+
+#uploadButton {
+    background-color: rgb(12, 48, 150);
+    width: 17%;
+    font-weight:normal;
+    margin: auto;
+    text-align:center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 3px grey;
+}
+
+#welcome {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    background-color: #6e186e;
+    padding-top: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+}
+
+#level1 {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    display: none;
+    background-color: #6e186e;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+}
+
+#level2 {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    display: none;
+    background-color: #6e186e;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+}
+
+#level3 {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    display: none;
+    background-color: #6e186e;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+}
+
+#gameOver {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    display: none;
+    margin-top: 25px;
+    background-color: rgb(70, 66, 66);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 10px grey;
+}

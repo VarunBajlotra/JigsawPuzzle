@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Image Puzzle</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="collage">
+        <h1 style="text-shadow: 3px 3px 8px;">Welcome to the Amigo Jigsaw Puzzle</h1>
+
+        <div id="welcome">
+            <h2>1. To play the Amigo Jigsaw Puzzle, you have to upload an image of your choice.</h2>
+            <h2>2. The game has 3 levels. To move the puzzle pieces, you may drag and drop them.</h2>
+            <h2>3. At each level, there are some default no. of pieces, though you may update the number of pieces if you like.</h2>
+            <h2>All the best!!</h2>
+        </div>
+
+        <div id="uploadButton"><label for="image" style="cursor: pointer;">Upload Image By Clicking Here</label></div>
+        <input type="file"  accept="image/*" name="image" id="image" onchange="loadFile(event)" style="display: none;">
+
+        <div id="level1">
+            <h2>Welcome to Level 1</h2>
+            <h3>
+                <label for="x1">No. of columns: </label>
+                <input id="x1" type="text" value="1">
+            </h3>
+            <h3>
+                <label for="y1">No. of rows: </label>
+                <input id="y1" type="text" value="2">
+            </h3>
+
+            <input type="button" value="Start Level 1!" onclick="amigoJigsawPuzzle.level1()">
+        </div>
+
+        <div id="level2">
+            <h2>Congratulations!! You have cleared Level 1.</h2>
+            <h2>Welcome to Level 2</h2>
+            <h3>
+                <label for="x2">No. of columns: </label>
+                <input id="x2" type="text" value="1">
+            </h3>
+            <h3>
+                <label for="y2">No. of rows: </label>
+                <input id="y2" type="text" value="3">
+            </h3>
+
+            <input type="button" value="Start Level 2!" onclick="amigoJigsawPuzzle.level2()">
+        </div>
+
+        <div id="level3">
+            <h2>Congratulations!! You have cleared Level 2.</h2>
+            <h2>Welcome to Level 3</h2>
+            <h3>
+                <label for="x3">No. of columns: </label>
+                <input id="x3" type="text" value="2">
+            </h3>
+            <h3>
+                <label for="y3">No. of rows: </label>
+                <input id="y3" type="text" value="5">
+            </h3>
+
+            <input type="button" value="Start Level 3!" onclick="amigoJigsawPuzzle.level3()">
+        </div>
+
+        <div id="gameOver">
+            <div style="padding: 5px 10px 20px 10px;">
+                <h2>Game Over!!</h2>
+                <h2>Congratulations!! You successfully cleared all the rounds!</h2>
+                
+                <input type="button" value="Play Again!" onclick="window.location.reload(true)">
+            </div>
+        </div>
+
+        <div id="playPanel" style="padding:5px;display:none;">
+            <h3 id="imgTitle">Solve the Jigsaw!</h3>
+            <hr />
+            <div style=" margin:auto; width:420px; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
